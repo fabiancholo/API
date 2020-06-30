@@ -8,10 +8,10 @@ from sklearn.preprocessing import LabelEncoder
 
 def valores(Year,Mileage,State,Make,Model): 
 
-    clf = joblib.load(os.path.dirname(__file__) + '\\car_regr.pkl')
-    le_s1 = joblib.load(os.path.dirname(__file__) + '\\le_s.pkl')
-    le_m1 = joblib.load(os.path.dirname(__file__) + '\\le_m.pkl')
-    le_k1 = joblib.load(os.path.dirname(__file__) + '\\le_k.pkl')
+    clf = joblib.load(os.path.dirname(__file__) + '/car_regr.pkl')
+    le_s1 = joblib.load(os.path.dirname(__file__) + '/le_s.pkl')
+    le_m1 = joblib.load(os.path.dirname(__file__) + '/le_m.pkl')
+    le_k1 = joblib.load(os.path.dirname(__file__) + '/le_k.pkl')
     
     datas = [Year,Mileage,State,Make,Model] 
     
